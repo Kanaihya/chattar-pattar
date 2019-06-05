@@ -32,6 +32,7 @@ h1, .user-count {
 
 .chat {
   content: '';
+  overflow: auto;
   width: 100%;
   height: calc(100vh - 165px);
   background: white;
