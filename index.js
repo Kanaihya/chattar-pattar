@@ -15,8 +15,3 @@ server([
     ctx.io.emit('message', ctx.data);
   })
 ]);
-
-//scroll down always
-chatWindow = document.getElementById('chat'); 
-var xH = chatWindow.scrollHeight; 
-chatWindow.scrollTo(0, xH);
