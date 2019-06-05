@@ -45,8 +45,3 @@ $('form').submit(function (e) {
   e.target.reset();
   $(e.target).find('input').focus();
 });
-
-//scroll down always
-chatWindow = document.getElementById('chat'); 
-var xH = chatWindow.scrollHeight; 
-chatWindow.scrollTo(0, xH);
