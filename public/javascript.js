@@ -45,3 +45,9 @@ $('form').submit(function (e) {
   e.target.reset();
   $(e.target).find('input').focus();
 });
+
+$('#send').click(function(){
+  chatWindow = document.getElementById('chk');
+  var xH = chatWindow.scrollHeight;
+  chatWindow.scrollTo(0, xH);
+}
