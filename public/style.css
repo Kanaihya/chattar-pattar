@@ -36,7 +36,7 @@ h1, .user-count {
   width: 100%;
   height: calc(100vh - 165px);
   background: white;
-  padding: 5px 10px;
+  padding: 25px 10px;
   border-radius: 10px;
   border: 2px solid gray;
 }
