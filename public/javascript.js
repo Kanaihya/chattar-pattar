@@ -50,4 +50,4 @@ $('#send').click(function(){
   chatWindow = document.getElementById('chat');
   var xH = chatWindow.scrollHeight;
   chatWindow.scrollTo(0, xH);
-}
+});
