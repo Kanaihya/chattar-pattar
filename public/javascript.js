@@ -19,12 +19,12 @@ var socket = io();
 // The user count. Can change when someone joins/leaves
 socket.on('count', function (data) {
   $('.user-count').html(data);
-  $('.chat').append('<p><emp>' + data.user + 'is online now' + '</emp>: </p>');
 });
 
 // When we receive a message
 // it will be like { user: 'username', message: 'text' }
 socket.on('message', function (data) {
+  $('.chat').append('<p><emp>' + data.user + ' is online' + '</emp>: </p>');
   $('.chat').append('<p><strong>' + data.user + '</strong>: ' + data.message + '</p>');
 });
 
