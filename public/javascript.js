@@ -19,7 +19,7 @@ var socket = io();
 // The user count. Can change when someone joins/leaves
 socket.on('count', function (data) {
   $('.user-count').html(data);
-  $('.chat').append('<p style="text-align:center;"><emp>' + cookie.get('user') + ' is online.' + '</emp></p>');
+  $('.chat').append('<p style="text-align:center;"><emp>' + 'New buddy joined to chattar pattar🤭🤭🤭.' + '</emp></p>');
 });
 
 // When we receive a message
