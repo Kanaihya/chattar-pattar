@@ -23,10 +23,11 @@ socket.on('count', function (data) {
 
 // When we receive a message
 // it will be like { user: 'username', message: 'text' }
+var any = true;
 socket.on('message', function (data) {
-  var any = true;
   if(any) {
     $('.chat').append('<p style="text-align:center;"><emp>' + data.user + ' is online.' + '</emp></p>');
+    $('.chat').append('<p><strong>' + data.user + '</strong>: ' + data.message + '</p>');
     any = false;
   }
    else {
