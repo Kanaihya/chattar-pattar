@@ -21,10 +21,6 @@ socket.on('count', function (data) {
   $('.user-count').html(data);
 });
 
-socket.on('message', function (data) {
-  $('.chat').append('<p><strong>' + data.user + '</strong>: ' + data.message + '</p>');
-});
-
 // When we receive a message
 // it will be like { user: 'username', message: 'text' }
 socket.on('message', function (data) {
